@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
             case 'd':
             case 'D':
-                salir();
+                exit(1);
             break;
 
             default: //Opción que no está disponible en el menú
@@ -86,7 +86,7 @@ void agregar_clave(int argumento, char *cad)
         printf("Has olvidade introducir el nombre del archivo.\n");
         exit(1);
     }
-    if((fp = fopen(cad, "a")) == NULL){
+    if((fp = fopen(cad, "a+")) == NULL){
         printf("No se puede abrir el archivo.\n");
         exit(1);
     }
@@ -106,8 +106,4 @@ void borrar_clave(void)
 {
 
 }
-/*********************************************************/
-void salir(void)
-{
 
-}
