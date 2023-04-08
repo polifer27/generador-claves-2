@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
             case 'd':
             case 'D':
-                exit(1);
+                exit(0);
             break;
 
             default: //Opción que no está disponible en el menú
